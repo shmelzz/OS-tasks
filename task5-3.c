@@ -22,11 +22,11 @@ int main()
 	int size=1;
 	while(size==1){
 	   size=write(fd[1], "p", 1);
-	   if(size==0){
-		   break;
+	   if(size!=1){
+		    break;
 		   }
 	   size_pipe+=1;
 	}
 	printf("размер: %d байт\n", size_pipe);
-  return 0;
+    return 0;
 }
