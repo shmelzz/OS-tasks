@@ -36,7 +36,7 @@ int main()
     printf ("Error on thread create, return value = %d\n", result);
     exit(-1);
   }
-  printf("Thread created, another_thread = %u\n", thid);
+  printf("Thread created, another_thread = %u\n", another_thread);
 
 
   mythid = pthread_self();
