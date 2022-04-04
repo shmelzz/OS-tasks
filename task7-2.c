@@ -47,6 +47,5 @@ int main()
   
   pthread_join(thid, (void **)NULL);
   pthread_join(another_thread, (void **)NULL);
-
   return 0;
 }
