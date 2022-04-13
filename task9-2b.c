@@ -31,7 +31,7 @@ int main()
 			exit(-1);
 	}
   }else{
-	  semctl(semid, 0 , IPC_RMID);
+	  semctl(semid, 0 , SETVAL, 1);
   }
   
   
