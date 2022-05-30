@@ -23,11 +23,6 @@ void my_handler(int nsig) {
 		
 		pid = waitpid(-1, &status, WNOHANG);
 	} else {
-		if(errno  == 10){
-			printf("All children were closed");
-		} else {
-		printf("Some error on waitpid errno = %d\n", errno);
-		}
 		return;
 	}
 }
